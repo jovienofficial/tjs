@@ -22,7 +22,7 @@ export const analyzeJersey = async (
   userSpecs: string = ""
 ): Promise<JerseyAnalysis> => {
   const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
-  const model = "gemini-1.5-flash";
+  const model = "gemini-1.5-flash-latest";
   
   const systemInstruction = `
 You are the AI content engine for "The Jersey Guys", a football jersey business.
